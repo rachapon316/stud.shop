@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STUDS KICKOFF | ร้านรองเท้าสตั๊ดออนไลน์</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #000000, #1f1f1f);
+      color: white;
+    }
+    header {
+      background: #111;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      color: #00ffc3;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ff0;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1580933947835-a593b5f3e268?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .promo-banner {
+      background: linear-gradient(90deg, #ff0080, #ffcc00);
+      color: #000;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+    }
+    .product-card {
+      background: #222;
+      border: 2px solid #00ffc3;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,255,200,0.3);
+      transition: 0.3s;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255,255,255,0.5);
+    }
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      padding: 1rem 0 0.5rem;
+      text-align: center;
+      color: #00ffc3;
+    }
+    .product-card p {
+      padding: 0 1rem 1.5rem;
+      text-align: center;
+      color: #ccc;
+    }
+    .buy-btn {
+      display: block;
+      width: 70%;
+      margin: 0 auto 1rem;
+      padding: 0.6rem;
+      background: #00ffc3;
+      border: none;
+      border-radius: 25px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .buy-btn:hover {
+      background: #ffcc00;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 1.5rem;
+      color: #888;
+    }
+    footer a {
+      color: #00ffc3;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>STUDS KICKOFF</h1>
+    <nav>
+      <a href="#">หน้าแรก</a>
+      <a href="gallery.html">สินค้า</a>
+      <a href="#โปรโมชั่น">โปรโมชั่น</a>
+      <a href="tel:0638671950">ติดต่อเรา</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>🔥 ยินดีต้อนรับสู่ร้านเปิดใหม่! 🔥</h2>
+    <p>สตั๊ดแรง! สวย! ราคาโดน! ของดีมีจำนวนจำกัด รีบเลย!</p>
+  </section>
+
+  <div class="promo-banner">💥 โปรโมชั่นเปิดเว็บใหม่ ลดสูงสุด 50% เฉพาะเดือนนี้เท่านั้น! 💥</div>
+
+  <section class="products" id="สินค้า">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1606813909027-0b3771c627db?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Stud Shoe 1">
+      <h3>Hyper X Pro</h3>
+      <p>ลดเหลือ 1,599 บาท (ปกติ 3,200 บาท)</p>
+      <button class="buy-btn">สั่งซื้อเลย</button>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1582742922412-8aa9ebd768f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Stud Shoe 2">
+      <h3>Speed Strike</h3>
+      <p>เพียง 1,299 บาท พร้อมของแถม!</p>
+      <button class="buy-btn">สั่งซื้อเลย</button>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1581518392481-96d58d6dc045?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Stud Shoe 3">
+      <h3>Blaze Runner</h3>
+      <p>ซื้อ 1 แถม 1 ฟรี! วันนี้วันเดียว</p>
+      <button class="buy-btn">สั่งซื้อเลย</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 STUDS KICKOFF. ทุกสิทธิ์เป็นของเรา | ติดต่อ: <a href="tel:0638671950">063-867-1950</a>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STUDS KICKOFF | ร้านรองเท้าสตั๊ดออนไลน์</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #000000, #1f1f1f);
+      color: white;
+    }
+    header {
+      background: #111;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      color: #00ffc3;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ff0;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1580933947835-a593b5f3e268?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .promo-banner {
+      background: linear-gradient(90deg, #ff0080, #ffcc00);
+      color: #000;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    .section-title {
+      text-align: center;
+      padding-top: 3rem;
+      font-size: 2rem;
+      color: #00ffc3;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .product-card {
+      background: #222;
+      border: 2px solid #00ffc3;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,255,200,0.3);
+      transition: 0.3s;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255,255,255,0.5);
+    }
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      padding: 1rem 0 0.5rem;
+      text-align: center;
+      color: #00ffc3;
+    }
+    .product-card p {
+      padding: 0 1rem 1.5rem;
+      text-align: center;
+      color: #ccc;
+    }
+    .buy-btn {
+      display: block;
+      width: 70%;
+      margin: 0 auto 1rem;
+      padding: 0.6rem;
+      background: #00ffc3;
+      border: none;
+      border-radius: 25px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .buy-btn:hover {
+      background: #ffcc00;
+    }
+    .pagination {
+      text-align: center;
+      padding: 1rem;
+    }
+    .pagination a {
+      color: #00ffc3;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .pagination a:hover {
+      color: #ffcc00;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 1.5rem;
+      color: #888;
+    }
+    footer a {
+      color: #00ffc3;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>STUDS KICKOFF</h1>
+    <nav>
+      <a href="#">หน้าแรก</a>
+      <a href="#gallery">สินค้า</a>
+      <a href="#promotion">โปรโมชั่น</a>
+      <a href="tel:0638671950">ติดต่อเรา</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>🔥 ยินดีต้อนรับสู่ร้านเปิดใหม่! 🔥</h2>
+    <p>สตั๊ดแรง! สวย! ราคาโดน! ของดีมีจำนวนจำกัด รีบเลย!</p>
+  </section>
+
+  <div class="promo-banner" id="promotion">💥 โปรโมชั่นเปิดเว็บใหม่ ลดสูงสุด 50% เฉพาะเดือนนี้เท่านั้น! 💥</div>
+
+  <h2 class="section-title" id="gallery">สินค้าแนะนำ</h2>
+  <section class="products">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1606813909027-0b3771c627db?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Stud 1">
+      <h3>Hyper X Pro</h3>
+      <p>ลดเหลือ 1,599 บาท (ปกติ 3,200 บาท)</p>
+      <button class="buy-btn">สั่งซื้อเลย</button>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1582742922412-8aa9ebd768f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Stud 2">
+      <h3>Speed Strike</h3>
+      <p>เพียง 1,299 บาท พร้อมของแถม!</p>
+      <button class="buy-btn">สั่งซื้อเลย</button>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1581518392481-96d58d6dc045?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Stud 3">
+      <h3>Blaze Runner</h3>
+      <p>ซื้อ 1 แถม 1 ฟรี! วันนี้วันเดียว</p>
+      <button class="buy-btn">สั่งซื้อเลย</button>
+    </div>
+  </section>
+
+  <h2 class="section-title">แกลเลอรี่เพิ่มเติม</h2>
+  <section class="products">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Stud 4">
+      <h3>Power Touch</h3>
+      <p>ราคาโปรโมชั่น 1,299 บาท</p>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Stud 5">
+      <h3>Lightning Bolt</h3>
+      <p>เหลือเพียง 1,150 บาท</p>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1587049352851-037ded8d00ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Stud 6">
+      <h3>Phantom Grip</h3>
+      <p>แถมฟรีถุงเท้ากีฬา 1 คู่</p>
+    </div>
+  </section>
+
+  <div class="pagination">
+    <a href="#">&laquo; หน้าแรก</a>
+    <a href="#gallery">1</a>
+    <a href="#gallery2">2</a>
+  </div>
+
+  <footer>
+    © 2025 STUDS KICKOFF. ทุกสิทธิ์เป็นของเรา | ติดต่อ: <a href="tel:0638671950">063-867-1950</a>
+  </footer>
+</body>
+</html>
